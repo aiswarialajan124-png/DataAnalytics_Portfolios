@@ -7,9 +7,14 @@ print(df["Series Name"].unique())
 
 # Seperate economic indicators
 gdp_growth = df[df["Series Name"] == "GDP growth (annual %)"]
-gdp_pc = df[df["Series Name"] == "GDP per capita (current US $)"]
+gdp_pc = df[df["Series Name"] == "GDP per capita (current US$)"]
 population = df[df["Series Name"] == "Population, total"]
 gini = df[df["Series Name"] == "Gini index"]
+
+print("GDP growth rows:", len(gdp_growth))
+print("GDP per capita rows:", len(gdp_pc))
+print("Population rows:", len(population))
+print("Gini rows:", len(gini))
 
 # merge GDP Growth and Gini (inequality)
 merged = pd.merge(
@@ -18,6 +23,9 @@ merged = pd.merge(
     on=["Country Name", "Country Code", "Year"],
     suffixes=("_gdp", "_gini")
 )
+print("Merged rows:", len(merged))
+print(merged.head())
+
 # Add GDP per capita
 gdp_pc = gdp_pc[["Country Name", "Year", "Value"]]
 gdp_pc = gdp_pc.rename(columns={"Value": "gdp_pc"})
@@ -50,9 +58,18 @@ sns.scatterplot(
     data=merged,
     x="Value_gdp",
     y="Value_gini",
-    hue="Country Type"
+    hue="Country Type",
+    alpha=0.6
 )
 
+# Add regression line
+sns.regplot(
+    data=merged,
+    x="Value_gdp",
+    y="Value_gini",
+    scatter=False,
+    color="black"
+)
 plt.title("GDP Growth vs Income Inequality")
 plt.xlabel("GDP Growth (%)")
 plt.ylabel("Gini Index")
@@ -116,3 +133,28 @@ plt.xlabel("Year")
 plt.ylabel("Average Gini Index")
 
 plt.savefig("../charts/inequality_by_country_type.png")
+
+# Chart 6: Kuznets Curve Test
+plt.figure()
+
+# scatter points
+sns.scatterplot(
+    data=merged,
+    x="gdp_pc",
+    y="Value_gini",
+    alpha=0.6
+)
+sns.regplot(
+    data=merged,
+    x="gdp_pc",
+    y="Value_gini",
+    scatter=False,
+    order=2,
+    color="red"
+)
+plt.title("GDP per Capita vs Income Inequality (Kuznets Curve Test)")
+plt.xlabel("GDP per Capita (US$)")
+plt.ylabel("Gini Index")
+
+plt.savefig("../charts/kuznets_curve_test.png")
+plt.close()
