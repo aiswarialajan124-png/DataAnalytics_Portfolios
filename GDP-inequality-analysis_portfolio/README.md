@@ -64,7 +64,6 @@ GDP-inequality-analysis_portfolio/
 |
 ├── data/
 │ ├── cleaned_data.csv
-│ ├── final_analysis_dataset.csv
 │ └── P_Data_Extract_From_World_Development_Indicators.xlsx
 │
 ├── scripts/
