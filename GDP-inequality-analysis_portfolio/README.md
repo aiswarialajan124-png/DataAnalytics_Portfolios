@@ -98,6 +98,7 @@ Documentation describing the project, methodology, and findings.
 Follow the steps below to reproduce the analysis and generate the charts.
 
 1. Clone the Repository
+
 git clone https://github.com/aiswarialajan124-png/DataAnalytics_Portfolios.git
 
 2. Install Required Libraries
@@ -106,6 +107,7 @@ pip install -r requirements.txt
 
 3. Run the Data Cleaning Script
 This script cleans and reshapes the original dataset and saves the processed data.
+
 python scripts/data_cleaning.py
 
 It will generate:
