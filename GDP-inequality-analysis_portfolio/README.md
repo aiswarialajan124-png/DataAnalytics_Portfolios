@@ -143,6 +143,11 @@ The charts output include:
    - Kuznets curve test
 
 ## Key Findings
-1. 
-2. 
-3. 
+- Weak relationship between GDP growth and inequality
+  - The scatterplot comparing GDP growth and the Gini index showd a very weak positive relationship between economic growth and income inequality. The calculated correlation coefficient is approximately 0.08, inidicating that higher GDP growth does not strongly correspond to higher or lower inequality levels across countries.
+
+- Income levels show a stronger relationship with inequality
+  - The correlation heatmap reveals a moderate negative correlation (-0.38) between GDP per capita and the Gini index.This suggests that countries with higher income levels tends to habe lower levels of income inequality on average.
+
+- Greater variation in inequality among developing economies
+   - The scatter plot shows that developing countries dislay a wider range of inequality levels compared with developed countries. While developed economies cluster aroung moderate inequality levels, developing economies show much greater variation.
