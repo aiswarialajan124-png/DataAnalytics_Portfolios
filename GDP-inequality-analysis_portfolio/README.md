@@ -59,7 +59,7 @@ GDP-inequality-analysis_portfolio/
 │ ├── gdp_vs_inequality.png
 │ ├── global_inequality_trend.png
 │ ├── growth_comparison.png
-  ├── inequality_by_country_type.png
+| ├── inequality_by_country_type.png
 │ └── kuznets_curve_test.png
 |
 ├── data/
