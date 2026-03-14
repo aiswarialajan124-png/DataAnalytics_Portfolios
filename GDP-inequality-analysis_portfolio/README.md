@@ -51,27 +51,29 @@ The workflow followed these steps:
       - Kuznets Curve test (GDP per capita vs inequality)
 
 ## Project Structure
-''' gdp-inequality-analysis/
-│
-├── data/
-│ ├── P_Data_Extract_From_World_Development_Indicators.xlsx
-│ ├── cleaned_data.csv
-│ └── final_analysis_dataset.csv
-│
-├── scripts/
-│ ├── data_cleaning.py
-│ └── analysis.py
+```
+GDP-inequality-analysis_portfolio/
 │
 ├── charts/
-│ ├── gdp_vs_inequality.png
 │ ├── correlation_heatmap.png
+│ ├── gdp_vs_inequality.png
 │ ├── global_inequality_trend.png
 │ ├── growth_comparison.png
-│ └── inequality_by_country_type.png
+  ├── inequality_by_country_type.png
+│ └── kuznets_curve_test.png
+|
+├── data/
+│ ├── cleaned_data.csv
+│ ├── final_analysis_dataset.csv
+│ └── P_Data_Extract_From_World_Development_Indicators.xlsx
 │
-├── requirements.txt
-└── README.md
-'''
+├── scripts/
+│ ├── analysis.py
+│ └── data_cleaning.py
+│
+├── README.md
+└── requirements.txt
+```
 
 ### Folder Description
 charts/
