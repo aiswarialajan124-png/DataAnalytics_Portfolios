@@ -51,7 +51,6 @@ The workflow followed these steps:
       - Kuznets Curve test (GDP per capita vs inequality)
 
 ## Project Structure
-gdp-inequality-analysis/ │ ├── data/ │ ├── P_Data_Extract_From_World_Development_Indicators.xlsx │ ├── cleaned_data.csv │ └── final_analysis_dataset.csv │ ├── scripts/ │ ├── data_cleaning.py │ └── analysis.py │ ├── charts/ │ ├── gdp_vs_inequality.png │ ├── correlation_heatmap.png │ ├── global_inequality_trend.png │ ├── growth_comparison.png │ ├── inequality_by_country_type.png │ └── kuznets_curve_test.png │ ├── requirements.txt └── README.md
 
 ### Folder Description
 charts/
@@ -69,10 +68,24 @@ List of Python libraries required to run the project.
 README.md
 Documentation describing the project, methodology, and findings.
 
-## Key Findings
-1. 
-2. 
-3. 
+## Technologies Used
+The analysis was conducted using the following tools and libraries:
+
+Programming Languages
+- Python
+
+Libraries
+- pandas - data cleaning and manipulation
+- numpy - numerical operations
+- matplotlib - data visualisations
+- seaborn - statistical visualisation
+
+Tools
+- Visual Studio Code - development environment
+- Git & GitHub - version control and project hosting
+
+Dataset Source
+- World Bank World Development Indicators 
 
 ## How to Run the Project
 Follow the steps below to reproduce the analysis and generate the charts.
@@ -106,3 +119,8 @@ The charts output include:
    - Global inequality trends
    - Growth comparison between developed and developing econimies
    - Kuznets curve test
+
+## Key Findings
+1. 
+2. 
+3. 
