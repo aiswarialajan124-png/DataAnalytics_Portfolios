@@ -143,11 +143,22 @@ The charts output include:
    - Kuznets curve test
 
 ## Key Findings
-- Weak relationship between GDP growth and inequality
-  - The scatterplot comparing GDP growth and the Gini index showd a very weak positive relationship between economic growth and income inequality. The calculated correlation coefficient is approximately 0.08, inidicating that higher GDP growth does not strongly correspond to higher or lower inequality levels across countries.
+- Weak relationship between GDP growth ans income inequality
 
-- Income levels show a stronger relationship with inequality
-  - The correlation heatmap reveals a moderate negative correlation (-0.38) between GDP per capita and the Gini index.This suggests that countries with higher income levels tends to habe lower levels of income inequality on average.
+  - The scatterplot comparing GDP growth and the Gini index shows a weak positive relationship between economic growth and income inequality.The calculated correlation coefficient is approximately 0.08, indicating that higher GDP growth does not strongly correspond to changes in inequality across countries.The wide dispersion of points suggest that economic growth alone is not a strong predictor of inequality outcomes.
 
-- Greater variation in inequality among developing economies
-   - The scatter plot shows that developing countries dislay a wider range of inequality levels compared with developed countries. While developed economies cluster aroung moderate inequality levels, developing economies show much greater variation.
+- Higher income countries tend to have lower inequality
+
+   - The correlation heatmap shows a moderate negative correlation (-0.38) between GDP per capita and Gini index. This suggests that countries with higher income levels tend to experience lower levels of income inequality on avaerge.
+
+- Global inequality has gradually declined over time
+
+    - The global inequlity trend chart shows that the average Gini index has generally decreased from 2000s to the early 2020s. Although there are fluctuations across years, the overall trend sugests a graduall reduction in average global income inequality during the obeservd period.
+
+- Developing countries exhibit higher and more variable inequality
+
+    - The comparison of inequality trends between developed and developing countries show that developing economies consistently have higher average Gini index values.Additionally, inequality levels in developing economies fluctuate more over time, indicating greater variability compared with developed countries.
+
+- GDP growth distributions differ beteween developed and developing economies
+
+    - The boxplot comparing GDP growth shows that developing countries tend ot experience slighlty higher median growth rates and a wider spread of growth outcomes.In contrast, developed countries show lower and more stable growth distributions.This reflects typical macroeconomic patterns where emering economies ofter grow faster but experience greater volatility.
