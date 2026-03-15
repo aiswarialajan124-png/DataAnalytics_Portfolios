@@ -74,7 +74,7 @@ GDP-inequality-analysis_portfolio/
 └── requirements.txt
 ```
 
-### Folder Description
+### Project Structure Description
 charts/
 All visualizations generated during the analysis process.
 
