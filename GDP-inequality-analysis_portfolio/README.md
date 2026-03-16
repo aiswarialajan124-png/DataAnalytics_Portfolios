@@ -162,3 +162,9 @@ The charts output include:
 - GDP growth distributions differ beteween developed and developing economies
 
     - The boxplot comparing GDP growth shows that developing countries tend ot experience slighlty higher median growth rates and a wider spread of growth outcomes.In contrast, developed countries show lower and more stable growth distributions.This reflects typical macroeconomic patterns where emering economies ofter grow faster but experience greater volatility.
+
+- Evidence consistent with the Kuznets curve hypothesis hypothesis
+   
+    -The scatteplot examining the relationship between GDP per capita and income inequality shows a curved (U-shaped) trend. At lower levels of income, inequality tends to decrease as GDP per capita increases.However, at higher income levels, inequality begins to increase slightly again.
+
+    This pattern is broadly consistent in the Kuznets curve hypothesis,whih proposes that inequality initially rises during early stages of economic development and later declines as economies become more developed.While the pattern is not perfectly symmetrical, the fitted curve suggests a non-linear relationship between economic development and income inequality.
