@@ -1,12 +1,5 @@
-# Interactive Python shell.
-ipython
-# Numerical arrays.
-numpy
-# Data Frames.
 pandas
-# Plotting.
+numpy
 matplotlib
-# Statistical data visualisation.
 seaborn
-# Reading Excel files
 openpyxl
