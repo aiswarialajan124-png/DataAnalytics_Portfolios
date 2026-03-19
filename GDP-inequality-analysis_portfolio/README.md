@@ -1,4 +1,4 @@
-# GDP Inequality Analysis Portfolio
+# GDP Growth and Income Inequality Analysis
 This project analyses the relationship between economic growth and income inequality across countries using data from the World Bank World Development Indicators.
 
 Using Python-based data analysis tools, the project cleans, merges, and analyses multiple economic indicators to explore whether higher GDP growth is associated with changes in income inequality.
@@ -39,16 +39,27 @@ The workflow followed these steps:
         - Developing economies (GDP per capita ≤ $20,000)
 
 4. Correlation Analysis
-   - The relationship between GDP growth and inequality was measured using the Python correlation coefficient.
+   - The relationship between GDP growth and inequality was measured using the Pearson correlation coefficient.
 
 5. Visualisation
    - Several charts were created to explore patterns in the data:
-      - GDP growth vs inequality scatterplot
+      - GDP growth vs inequality scatterplot 
+      charts/gdp_vs_inequality.png
+
       - Correlation heatmap
+      charts/correlation_heatmap.png
+
       - Global inequality trend
+      charts/global_inequality_trend.png
+
       - Growth comparison between developed and developing economies
+      charts/growth_comaparison.png
+
       - Inequality trends by development level
+      charts/inequality_by_country_type.png
+
       - Kuznets Curve test (GDP per capita vs inequality)
+      charts/kuznets_curve_test.png
 
 ## Project Structure
 ```
@@ -74,7 +85,7 @@ GDP-inequality-analysis_portfolio/
 └── requirements.txt
 ```
 
-### Project Structure Description
+### Folder Description
 charts/
 All visualizations generated during the analysis process.
 
@@ -82,7 +93,7 @@ data/
 Contains the raw dataset downloaded from the World Bank and the processed datasets used for analysis.
 
 scripts/
-Pythin scripts used to clean the data and perform the economic analysis.
+Python scripts used to clean the data and perform the economic analysis.
 
 requirements.txt
 List of Python libraries required to run the project.
@@ -93,10 +104,10 @@ Documentation describing the project, methodology, and findings.
 ## Technologies Used
 The analysis was conducted using the following tools and libraries:
 
-Programming Languages
+**Programming Languages**
 - Python
 
-Libraries
+**Libraries**
 - pandas - data cleaning and manipulation
 - numpy - numerical operations
 - matplotlib - data visualisations
@@ -143,9 +154,9 @@ The charts output include:
    - Kuznets curve test
 
 ## Key Findings
-- Weak relationship between GDP growth ans income inequality
+- Weak relationship between GDP growth and income inequality
 
-  - The scatterplot comparing GDP growth and the Gini index shows a weak positive relationship between economic growth and income inequality.The calculated correlation coefficient is approximately 0.08, indicating that higher GDP growth does not strongly correspond to changes in inequality across countries.The wide dispersion of points suggest that economic growth alone is not a strong predictor of inequality outcomes.
+  - The scatterplot comparing GDP growth and the Gini index shows a weak positive relationship between economic growth and income inequality. The calculated correlation coefficient is approximately 0.08, indicating that higher GDP growth does not strongly correspond to changes in inequality across countries. The wide dispersion of points suggestS that economic growth alone is not a strong predictor of inequality outcomes.
 
 - Higher income countries tend to have lower inequality
 
@@ -153,18 +164,18 @@ The charts output include:
 
 - Global inequality has gradually declined over time
 
-    - The global inequlity trend chart shows that the average Gini index has generally decreased from 2000s to the early 2020s. Although there are fluctuations across years, the overall trend sugests a graduall reduction in average global income inequality during the obeservd period.
+    - The global inequality trend chart shows that the average Gini index has generally decreased from 2000s to the early 2020s. Although there are fluctuations across years, the overall trend sugests a gradual reduction in average global income inequality during the obesered period.
 
 - Developing countries exhibit higher and more variable inequality
 
-    - The comparison of inequality trends between developed and developing countries show that developing economies consistently have higher average Gini index values.Additionally, inequality levels in developing economies fluctuate more over time, indicating greater variability compared with developed countries.
+    - The comparison of inequality trends between developed and developing countries show that developing economies consistently have higher average Gini index values. Additionally, inequality levels in developing economies fluctuate more over time, indicating greater variability compared with developed countries.
 
 - GDP growth distributions differ beteween developed and developing economies
 
-    - The boxplot comparing GDP growth shows that developing countries tend ot experience slighlty higher median growth rates and a wider spread of growth outcomes.In contrast, developed countries show lower and more stable growth distributions.This reflects typical macroeconomic patterns where emering economies ofter grow faster but experience greater volatility.
+    - The boxplot comparing GDP growth shows that developing countries tend ot experience slightly higher median growth rates and a wider spread of growth outcomes. In contrast, developed countries show lower and more stable growth distributions. This reflects typical macroeconomic patterns where emerging economies ofter grow faster but experience greater volatility.
 
-- Evidence consistent with the Kuznets curve hypothesis hypothesis
+- Evidence consistent with the Kuznets curve hypothesis 
    
-    -The scatteplot examining the relationship between GDP per capita and income inequality shows a curved (U-shaped) trend. At lower levels of income, inequality tends to decrease as GDP per capita increases.However, at higher income levels, inequality begins to increase slightly again.
+    -The scatterplot examining the relationship between GDP per capita and income inequality shows a curved (U-shaped) trend. At lower levels of income, inequality tends to decrease as GDP per capita increases. However, at higher income levels, inequality begins to increase slightly again.
 
-    This pattern is broadly consistent in the Kuznets curve hypothesis,whih proposes that inequality initially rises during early stages of economic development and later declines as economies become more developed.While the pattern is not perfectly symmetrical, the fitted curve suggests a non-linear relationship between economic development and income inequality.
+    This pattern is broadly consistent in the Kuznets curve hypothesis,whih proposes that inequality initially rises during early stages of economic development and later declines as economies become more developed. While the pattern is not perfectly symmetrical, the fitted curve suggests a non-linear relationship between economic development and income inequality.
